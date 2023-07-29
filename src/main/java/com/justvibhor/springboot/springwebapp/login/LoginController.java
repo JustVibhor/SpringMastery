@@ -29,7 +29,7 @@ public class LoginController {
 			model.put("password", password);
 			return "welcome";
 		}
-		
+		model.put("errorMessage", "Bhai Username aur password galat heh");
 		return "login";
 	}
 }
