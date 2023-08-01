@@ -15,8 +15,9 @@
 		<h1>Add todo</h1>
 		
 		<form method="post">
-			Description: <input type="text" name="description">
-			<input type="submit" class="btn btn-success" value="submit">
+			Description: <input type="text" name="description" required="required">
+			Date: <input type="date" name="targetDate" required="required">
+			<input type="submit" class="btn btn-success" value="submit" required="required">
 		</form>
 	</div>
 	<script
