@@ -28,11 +28,18 @@ public class TodoService {
 		Todo todo = new Todo(++todoCount, userName, description, targetDate, isDone);
 		todos.add(todo);
 	}
-	
+
 	public void deleteById(int id) {
-		
+
 		Predicate<? super Todo> predicate = todo -> todo.getId() == id;
-		todos.removeIf(predicate );
+		todos.removeIf(predicate);
 	}
+
+	public Todo findById(int id) {
+		Predicate<? super Todo> predicate = todo -> todo.getId() == id;
+		Todo todo = todos.stream().filter(predicate).findFirst().get();
+		return todo;
+	}
+
 
 }
