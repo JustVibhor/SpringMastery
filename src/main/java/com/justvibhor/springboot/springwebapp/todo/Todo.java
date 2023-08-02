@@ -2,11 +2,16 @@ package com.justvibhor.springboot.springwebapp.todo;
 
 import java.time.LocalDate;
 
+import jakarta.validation.constraints.Size;
+
 public class Todo {
 
 	private int id;
 	private String userName;
+
+	@Size(min = 9, message = "atleast 9 characters")
 	private String description;
+
 	private LocalDate targetDate;
 	private boolean done;
 
