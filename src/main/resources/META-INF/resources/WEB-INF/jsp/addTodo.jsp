@@ -15,13 +15,12 @@
 		<h1>Add todo</h1>
 
 		<form:form method="post" modelAttribute="todo">
-			Description: <form:input type="text" path="description"
-				name="description" />
-			Date: <form:input type="date" path="targetDate" name="targetDate" />
+			<form:label path="description">Description</form:label>
+			<form:input type="text" path="description" name="description" />
+			<form:input type="date" path="targetDate" name="targetDate" />
 			<form:input type="hidden" path="id" />
 			<form:input type="hidden" path="done" />
-			<input type="submit" class="btn btn-success" value="submit"
-				required="required">
+			<input type="submit" class="btn btn-success" value="submit" required="required">
 			<form:errors path="description" class="text-warning" />
 		</form:form>
 	</div>
