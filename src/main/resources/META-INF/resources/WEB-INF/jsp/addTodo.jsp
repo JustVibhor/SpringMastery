@@ -10,7 +10,7 @@
 	href="webjars/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.standalone.min.css" 
 	rel="stylesheet"
 	>
-<title>Add Todo Page</title>
+<title>Add Todos Page</title>
 </head>
 <body>
 	<div class="container">
