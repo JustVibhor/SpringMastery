@@ -18,7 +18,6 @@
 		<table class="table table-hover">
 			<thead>
 				<tr class="table-dark">
-					<th>Id</th>
 					<th>Description</th>
 					<th>Target Date</th>
 					<th>Done?</th>
@@ -29,7 +28,6 @@
 			<tbody>
 				<c:forEach items="${todos}" var="todo">
 					<tr>
-						<td>${todo.id }</td>
 						<td>${todo.description }</td>
 						<td>${todo.targetDate }</td>
 						<td><button type="button" class="btn btn-outline-success">${todo.done }</button></td>
