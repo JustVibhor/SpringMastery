@@ -13,7 +13,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 @Configuration
 public class SpringSecurityConfiguration {
 	
-	// manages user login details
+	// manages user username, password and role
 	@Bean
 	public InMemoryUserDetailsManager createUserDetailManager() {
 		Function<String, String> passwordEncoder
