@@ -13,6 +13,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 @Configuration
 public class SpringSecurityConfiguration {
 	
+	// manages user login details
 	@Bean
 	public InMemoryUserDetailsManager createUserDetailManager() {
 		Function<String, String> passwordEncoder
@@ -27,6 +28,7 @@ public class SpringSecurityConfiguration {
 		return new InMemoryUserDetailsManager(userDetails);
 	}
 	
+	// does salting and all
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
