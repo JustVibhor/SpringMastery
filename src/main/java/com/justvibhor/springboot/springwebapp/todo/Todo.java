@@ -9,11 +9,15 @@ import jakarta.validation.constraints.Size;
 
 @Entity
 public class Todo {
+	
+	public Todo() {
+		
+	}
 
 	@Id
 	@GeneratedValue
 	private int id;
-	private String userName;
+	private String username;
 
 	@Size(min = 9, message = "atleast 9 characters")
 	private String description;
@@ -24,7 +28,7 @@ public class Todo {
 	public Todo(int id, String userName, String description, LocalDate targetDate, boolean done) {
 		super();
 		this.id = id;
-		this.userName = userName;
+		this.username = userName;
 		this.description = description;
 		this.targetDate = targetDate;
 		this.done = done;
@@ -39,11 +43,11 @@ public class Todo {
 	}
 
 	public String getUserName() {
-		return userName;
+		return username;
 	}
 
 	public void setUserName(String userName) {
-		this.userName = userName;
+		this.username = userName;
 	}
 
 	public String getDescription() {
@@ -72,7 +76,7 @@ public class Todo {
 
 	@Override
 	public String toString() {
-		return "Todo [id=" + id + ", userName=" + userName + ", description=" + description + ", targetDate="
+		return "Todo [id=" + id + ", userName=" + username + ", description=" + description + ", targetDate="
 				+ targetDate + ", done=" + done + "]";
 	}
 
