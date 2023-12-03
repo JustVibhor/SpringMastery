@@ -1,4 +1,4 @@
-package com.justvibhor.springboot.springwebapp.todo;
+package com.justvibhor.springboot.learnSpringBoot.todo;
 
 import java.time.LocalDate;
 

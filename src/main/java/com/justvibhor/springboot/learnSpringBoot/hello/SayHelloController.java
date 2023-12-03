@@ -1,4 +1,4 @@
-package com.justvibhor.springboot.springwebapp.hello;
+package com.justvibhor.springboot.learnSpringBoot.hello;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

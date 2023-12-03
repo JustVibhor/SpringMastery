@@ -1,13 +1,13 @@
-package com.justvibhor.springboot.springwebapp;
+package com.justvibhor.springboot.learnSpringBoot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringwebappApplication {
+public class LearnSpringBootApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringwebappApplication.class, args);
+		SpringApplication.run(LearnSpringBootApplication.class, args);
 	}
 
 }

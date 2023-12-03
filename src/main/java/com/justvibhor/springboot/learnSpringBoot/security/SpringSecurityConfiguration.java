@@ -1,4 +1,4 @@
-package com.justvibhor.springboot.springwebapp.security;
+package com.justvibhor.springboot.learnSpringBoot.security;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 
