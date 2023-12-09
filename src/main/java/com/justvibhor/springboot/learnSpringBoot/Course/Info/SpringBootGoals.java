@@ -1,4 +1,4 @@
-package com.justvibhor.springboot.learnSpringBoot.Course;
+package com.justvibhor.springboot.learnSpringBoot.Course.Info;
 
 public class SpringBootGoals {
     /*
