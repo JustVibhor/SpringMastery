@@ -16,5 +16,11 @@ public class SpringBootGoals {
                 * Monitoring (Spring Boot Actuator)
         * Production ready application quickly
 
+
+        Spring boot devtools
+            helps with developer productivity
+            don't need to restart the server manually for every code change
+            for pom.xml you have to restart the server
+
      */
 }
